@@ -1,0 +1,49 @@
+.upcomingScheduleCard {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: fit-content;
+}
+
+.sectionTitle {
+  color: #222B45;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.scheduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.dayGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dayLabel {
+  color: #8F9BB3;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.appointmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .appointmentsGrid {
+    grid-template-columns: 1fr;
+  }
+}

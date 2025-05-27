@@ -1,0 +1,66 @@
+.activityCard {
+  background-color: #FFFFFF; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);  
+  padding: 24px; 
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px; 
+}
+
+.sectionTitle {
+  color: #222B45;
+  font-size: 20px; 
+  font-weight: 600;
+}
+
+.summaryText {
+  color: #8F9BB3;
+  font-size: 14px;
+}
+
+.chartContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; 
+  height: 120px; 
+  padding-bottom: 20px; 
+  border-bottom: 1px solid #F8F9FB; 
+  position: relative;
+}
+
+.barWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 12%; 
+  gap: 8px; 
+}
+
+.bar {
+  width: 12px;
+  border-radius: 6px;
+}
+
+
+.barBlue {
+  background-color: #3C79F5; 
+}
+
+.barTeal {
+  background-color: #2FE3A5;
+}
+
+.dayLabel {
+  color: #8F9BB3; 
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 5px;
+}

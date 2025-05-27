@@ -1,0 +1,72 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.healthCard {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 120px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardTitle {
+  color: #222B45;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cardDate {
+  color: #8F9BB3;
+  font-size: 0.875rem;
+}
+
+.statusBar {
+  background-color: #F8F9FB;
+  border-radius: 4px;
+  height: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  border-radius: 4px;
+}
+
+.progressBar.issue {
+  background-color: #FA6464;
+}
+
+.progressBar.healthy {
+  background-color: #2FE3A5;
+}
+
+.progressBar.boneStatus {
+  background-color: #F06E3D;
+}
+
+.statusText {
+  color: #222B45;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.detailsLink {
+  color: #3C79F5;
+  font-size: 0.875rem;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-top: auto;
+}

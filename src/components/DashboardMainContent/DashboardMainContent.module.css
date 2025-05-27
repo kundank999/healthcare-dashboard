@@ -1,0 +1,74 @@
+.dashboardGrid {
+  display: grid;
+  /* Define grid areas for precise placement based on image_0c37ea.jpg */
+  grid-template-areas:
+    "anatomy health-status calendar"
+    "activity activity schedule"; /* This implies a 3-column layout at the top and a 2-column layout at the bottom, or maybe 2 rows with flexible column spans */
+
+  /* Let's refine based on visual:
+     Anatomy (top left, tall)
+     Health Status (top right of Anatomy)
+     Calendar (below Health Status)
+     Upcoming Schedule (below Calendar)
+     Activity Feed (bottom left, below Anatomy, possibly spans under Health Status part)
+  */
+
+  /* A more accurate representation of image_0c37ea.jpg is:
+     Column 1: AnatomySection (tall), then ActivityFeed (below Anatomy)
+     Column 2: HealthStatusCards (top), then CalendarView (below HealthStatusCards), then UpcomingSchedule (below CalendarView)
+  */
+  grid-template-columns: 1.2fr 1fr; /* Adjust column widths as seen in image */
+  grid-template-rows: auto auto auto; /* Rows will auto-adjust based on content */
+  gap: 24px; /* Space between grid items */
+  width: 100%;
+  align-items: start; /* Align items to the top of their grid areas */
+}
+
+
+.anatomyArea {
+  grid-column: 1; 
+  grid-row: 1 / span 2;
+}
+
+.healthStatusArea {
+  grid-column: 2; 
+  grid-row: 1; 
+}
+
+.calendarArea {
+  grid-column: 2; 
+  grid-row: 2; 
+}
+
+.scheduleArea {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.activityFeedArea {
+  grid-column: 1;
+  grid-row: 2; 
+}
+
+
+@media (max-width: 1200px) {
+  .dashboardGrid {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+    grid-template-areas:
+      "anatomy"
+      "health-status"
+      "calendar"
+      "schedule"
+      "activity";
+  }
+
+  .anatomyArea,
+  .healthStatusArea,
+  .calendarArea,
+  .scheduleArea,
+  .activityFeedArea {
+    grid-column: 1; 
+    grid-row: auto; 
+  }
+}

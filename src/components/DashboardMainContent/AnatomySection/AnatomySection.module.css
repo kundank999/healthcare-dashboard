@@ -1,0 +1,123 @@
+.anatomyCard {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+}
+
+.title {
+  color: #222B45;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.humanBodyContainer {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FB;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.humanBodyImage {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.healthIndicator {
+  position: absolute;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.healthy {
+  background-color: #2FE3A5;
+  color: #FFFFFF;
+}
+
+.issue {
+  background-color: #3C79F5;
+  color: #FFFFFF;
+}
+
+.healthIndicator img,
+.healthIndicator svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.searchOverlay {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+}
+
+.searchOverlay img {
+  width: 20px;
+  height: 20px;
+  filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.zoomSliderContainer {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoomSliderLine {
+  width: 100%;
+  height: 4px;
+  background-color: #D8D8D8;
+  border-radius: 2px;
+  position: relative;
+}
+
+.zoomHandle {
+  width: 16px;
+  height: 16px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+}

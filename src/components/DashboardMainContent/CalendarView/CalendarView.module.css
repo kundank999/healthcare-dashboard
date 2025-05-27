@@ -1,0 +1,130 @@
+.calendarCard {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: fit-content;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F0F3F9;
+}
+
+.monthTitle {
+  color: #222B45;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navArrows {
+  display: flex;
+  gap: 8px;
+  background-color: #F8F9FB;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.navIcon {
+  color: #8F9BB3;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.dayColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  background-color: #F8F9FB;
+  border-radius: 8px;
+  min-height: 120px;
+  justify-content: flex-start;
+}
+
+.dayColumn.hasAppointment {
+  background-color: #E7EEFF;
+}
+
+.dayName {
+  color: #8F9BB3;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dayDate {
+  color: #222B45;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dayColumn.hasAppointment .dayName,
+.dayColumn.hasAppointment .dayDate {
+  color: #3C79F5;
+}
+
+.appointmentTime {
+  background-color: #3C79F5;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  width: calc(100% - 8px);
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+.appointmentDetails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.appointmentDetailCard {
+  background-color: #EDF2F9;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.detailIcon {
+  color: #3C79F5;
+  flex-shrink: 0;
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detailTitle {
+  color: #222B45;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.detailTime,
+.detailDoctor {
+  color: #8F9BB3;
+  font-size: 0.875rem;
+}
